@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build: .
+    container_name: oss-fastapi-container
+    ports:
+      - "80:8000"     
+    restart: always   
