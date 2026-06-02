@@ -6,4 +6,6 @@ services:
     container_name: oss-fastapi-container
     ports:
       - "80:8000"     
-    restart: always   
+    restart: always
+    volumes:                     
+      - ./courses.json:/app/courses.json   
